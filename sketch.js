@@ -15,15 +15,18 @@ function draw() {
   mrect.x = mouseX;
   mrect.y=mouseY;
 
-  if(mrect.x-srect.x<mrect.width/2+srect.width/2 &&){
-    mrect.shapeColor = "blue";
-    srect.shapeColor="blue";
+  if(mrect.x-srect.x <srect.width/2+mrect.width/2 && srect.x-mrect.x <srect.width/2+mrect.width/2 ){
+    mrect.shapeColor="red";
+    srect.shapeColor="red";
+
   }
   else{
-    mrect.shapeColor = "green";
-    srect.shapeColor="green";
+    mrect.shapeColor="Green";
+    srect.shapeColor="Green";
+
 
   }
 
+  
   drawSprites();
 }
